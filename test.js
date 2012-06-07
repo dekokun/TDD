@@ -48,7 +48,7 @@ describe('Array', function() {
         assert.equal(a.fill(1)[3], 1);
       });
     });
-    it('副作用がないこと(オブジェクトのコピーは…)', function() {
+    it('副作用がないこと(fillを実行した後で状態に変化がないこと)(オブジェクトのコピーは…)', function() {
       var a = [1,2,3];
       a.fill(1);
       assert.equal(a[1], 2);
