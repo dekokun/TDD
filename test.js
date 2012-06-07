@@ -1,3 +1,10 @@
+describe('テストの読み方', function() {
+  it('1を代入された変数aは1と等しい。詳しくはこの文章をクリックしてみよう', function() {
+    var a = 1;
+    assert.equal(a, 1);
+  });
+});
+
 describe('#fizzbuzz()', function() {
   describe('3の倍数 fizz', function() {
     it('3', function() {
