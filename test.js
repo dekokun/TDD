@@ -44,6 +44,12 @@ describe('Array', function() {
         assert.equal(a.fill(1)[i], 1);
       }
     });
+    it('もちろん配列の要素が5個でも動く', function() {
+      var i, a = [2,3,4,5,6];
+      for (i = 0; i < a.length; i++) {
+        assert.equal(a.fill(2)[i], 2);
+      }
+    });
     it('副作用がないこと(fillを実行した後で状態に変化がないこと)(オブジェクトのコピーは…)', function() {
       var a = [1,2,3];
       a.fill(1);
