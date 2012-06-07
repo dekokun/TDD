@@ -27,7 +27,7 @@ describe('#fizzbuzz()', function() {
 
 describe('Array', function() {
   describe('#fill()', function() {
-    it('序の口(まずはなんでもいいからメソッドを作ってみるところから。prototypeとは何かとか調べるといいと思うよ！)', function() {
+    it('序の口(まずはなんでもいいからメソッドを作ってみるところから。JavaScriptにおいて"prototype"とは何かとか調べるとヒントになると思うよ！)', function() {
       var a = [1,2,3];
       assert.equal(a.fill(1)[0], 1);
     });
