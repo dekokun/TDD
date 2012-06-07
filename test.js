@@ -34,11 +34,11 @@ describe('Array', function() {
     describe('fillはその配列の中身が全て引数になったものを返すのです', function() {
       it('1', function() {
         var a = [1,2,3,4];
-        assert(a.fill(1)[3] === 1);
+        assert(a.fill(1)[1] === 1);
       });
-      it('4', function() {
+      it('3', function() {
         var a = [1,2,3,4];
-        assert(a.fill(1)[4] === 1);
+        assert(a.fill(1)[3] === 1);
       });
     });
     it('副作用がないこと(オブジェクトのコピーは…)', function() {
