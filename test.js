@@ -38,15 +38,11 @@ describe('Array', function() {
       var a = [1,2,3];
       assert.equal(a.fill(1)[0], 1);
     });
-    describe('fillはその配列の中身が全て引数になったものを返すのです', function() {
-      it('1', function() {
-        var a = [1,2,3,4];
-        assert.equal(a.fill(1)[1], 1);
-      });
-      it('3', function() {
-        var a = [1,2,3,4];
-        assert.equal(a.fill(1)[3], 1);
-      });
+    it('fillはその配列の中身が全て引数になったものを返すのです', function() {
+      var i, a = [1,2,3,4];
+      for (i = 0; i < a.length; i++) {
+        assert.equal(a.fill(1)[i], 1);
+      }
     });
     it('副作用がないこと(fillを実行した後で状態に変化がないこと)(オブジェクトのコピーは…)', function() {
       var a = [1,2,3];
