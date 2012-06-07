@@ -14,7 +14,7 @@
         if (!expr) throw new Error(msg || 'failed');
       };
       assert.equal = function(a, b, msg) {
-        if (a !== b) throw new Error(msg || ('failed : '+a+','+b));
+        if (a !== b) throw new Error(msg || ('failed : '+a+' is not equal '+b));
       };
       $(function() {
         mocha.run();
