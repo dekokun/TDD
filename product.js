@@ -1,6 +1,6 @@
 var fizzbuzz = function(n) {
   return "fizz";
-}
+};
 
 // Arrayのプロトタイプにメソッドを追加するべきかどうかは
 // 議論の余地がある
