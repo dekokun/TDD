@@ -17,7 +17,7 @@
         if (a !== b) throw new Error(msg || ('failed : '+a+' is not equal '+b));
       };
       $(function() {
-        mocha.run();
+        mocha.run().globals(['stats', 'report']);
       });
     </script>
   </head>
