@@ -24,10 +24,10 @@ describe('#fizzbuzz()', function() {
   });
   describe('15の倍数 fizzbuzz', function() {
     it('15', function() {
-      assert.equal(fizzbuzz(5), "buzz");
+      assert.equal(fizzbuzz(15), "fizzbuzz");
     });
     it('30', function() {
-      assert.equal(fizzbuzz(10), "buzz");
+      assert.equal(fizzbuzz(30), "fizzbuzz");
     });
   });
 });
