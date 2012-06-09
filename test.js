@@ -30,6 +30,11 @@ describe('#fizzbuzz()', function() {
       assert.equal(fizzbuzz(30), "fizzbuzz");
     });
   });
+  describe('どれでもない場合', function() {
+    it('4', function() {
+      assert.equal(fizzbuzz(4), "4");
+    });
+  });
 });
 
 describe('Array', function() {
