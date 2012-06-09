@@ -34,6 +34,9 @@ describe('#fizzbuzz()', function() {
     it('4', function() {
       assert.equal(fizzbuzz(4), "4");
     });
+    it('7', function() {
+      assert.equal(fizzbuzz(7), "7");
+    });
   });
 });
 
